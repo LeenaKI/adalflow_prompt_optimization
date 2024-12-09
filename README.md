@@ -8,7 +8,7 @@ This repository contains a Streamlit-based web application designed to optimize 
 
 - Interactive user interface for prompt optimization.
 - Leverages AdalFlow to apply advanced optimization techniques.
-- Supports customizable OpenAI models (e.g., GPT-4).
+- Supports customizable OpenAI models (e.g., gpt-4o-mini used here).
 - Secure API key management.
 - Detailed and structured outputs tailored to the user's input.
 
@@ -87,13 +87,3 @@ To ensure your API key remains private:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contributions
-
-Contributions are welcome! Please create an issue or pull request if you’d like to contribute.
-
----
-
-This README file can be updated as your project evolves. Let me know if you'd like additional customization!
