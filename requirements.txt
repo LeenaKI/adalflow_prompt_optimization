@@ -1,0 +1,4 @@
+streamlit
+adalflow
+python-dotenv
+adalflow[groq,faiss-cpu]
