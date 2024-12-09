@@ -1,4 +1,4 @@
-AI Prompt Optimization App
+#AI Prompt Optimization App
 
 This repository contains a Streamlit-based web application designed to optimize AI prompts for better clarity, structure, and effectiveness. It leverages the **AdalFlow** library and **OpenAI API** to streamline the prompt optimization process.
 
