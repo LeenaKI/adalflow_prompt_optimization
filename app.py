@@ -1,6 +1,6 @@
 import streamlit as st
 import adalflow as adal
-from adalflow.components.model_client.google_client import GoogleGenAIClient
+#from adalflow.components.model_client.google_client import GoogleGenAIClient
 from adalflow.components.model_client.openai_client import OpenAIClient
 from adalflow.optim.types import ParameterType
 
