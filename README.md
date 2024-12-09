@@ -19,7 +19,7 @@ This repository contains a Streamlit-based web application designed to optimize 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/LeenaKI/adalflow_prompt_optimization.git
-   cd ai-prompt-optimization
+   cd adalflow_prompt_optimization
    ```
 
 2. **Install Dependencies**
