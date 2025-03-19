@@ -1,4 +1,5 @@
 streamlit
 adalflow
 openai
+google-generativeai
 adalflow[groq,faiss-cpu]
