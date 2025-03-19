@@ -1,10 +1,8 @@
 import streamlit as st
 import adalflow as adal
-#from adalflow.components.model_client.google_client import GoogleGenAIClient
-from adalflow.components.model_client.openai_client import OpenAIClient
+from adalflow.components.model_client.google_client import GoogleGenAIClient
 from adalflow.optim.types import ParameterType
 
-# Define the Prompt Optimization Pipeline class
 class PromptOptimizationPipeline(adal.Component):
     def __init__(self, model_client: adal.ModelClient, model_kwargs: dict):
         super().__init__()
@@ -32,28 +30,25 @@ class PromptOptimizationPipeline(adal.Component):
         output = self.prompt_optimizer(prompt_kwargs={"input_prompt": user_prompt})
         return output.data
 
-st.title("Adalflow Prompt Optimization")
+st.title("Adalflow Prompt Optimization with Gemini")
 
 # API Key Input
-api_key = st.text_input("Enter your OpenAI API Key:", type="password")
+api_key = st.text_input("Enter your Google API Key:", type="password")
 
 if api_key:
-    # Initialize OpenAI Client with user-provided API key
-    gpt_4o_mini_model = {
-        "model_client": OpenAIClient(api_key=api_key),
+    # Initialize Google Gemini Client with user-provided API key
+    gemini_model = {
+        "model_client": GoogleGenAIClient(api_key=api_key),
         "model_kwargs": {
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 0.99,
-            "frequency_penalty": 0,
-            "presence_penalty": 0,
-            "stop": None,
+            "model": "gemini-1.5-flash",   
+            "max_output_tokens": 4000,     
+            "temperature": 0.0,          
+            "top_p": 0.95,                 
+            "stop_sequences": None,       
         },
     }
 
-    # Instantiate the pipeline
-    prompt_optimizer = PromptOptimizationPipeline(**gpt_4o_mini_model)
+    prompt_optimizer = PromptOptimizationPipeline(**gemini_model)
 
     # User Input Section
     user_prompt = st.text_area("Enter your custom prompt:")
@@ -67,4 +62,4 @@ if api_key:
         except Exception as e:
             st.error(f"An error occurred: {e}")
 else:
-    st.warning("Please enter your API key to proceed.")
+    st.warning("Please enter your Google API key to proceed.")
