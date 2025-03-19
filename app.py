@@ -41,11 +41,11 @@ if api_key:
     gemini_model = {
         "model_client": GoogleGenAIClient(api_key=api_key),
         "model_kwargs": {
-            "model": "gemini-1.5-flash",  # or "gemini-1.5-pro" for a more powerful option
-            "max_tokens": 4000,          # Gemini supports this, though exact limits vary
-            "temperature": 0.0,          # Low randomness for precise outputs
-            "top_p": 0.99,               # Nucleus sampling, similar to OpenAI
-            "stop": None,                # No stop sequences by default
+            "model": "gemini-1.5-flash",  # or "gemini-1.5-pro" if preferred
+            "max_output_tokens": 4000,    # Correct parameter for Gemini
+            "temperature": 0.0,           # Controls randomness (valid for Gemini)
+            "top_p": 0.99,                # Nucleus sampling (valid for Gemini)
+            "stop_sequences": None,       # Equivalent to "stop" in OpenAI
         },
     }
 
