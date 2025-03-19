@@ -55,10 +55,10 @@ This repository contains a Streamlit-based web application designed to optimize 
 
 ## Examples
 
-### `_Input Prompt:_`
+### `Input Prompt:`
 > Write a summary of the benefits of renewable energy.
 
-### `_Optimized Output Prompt:_`
+### `Optimized Output Prompt:`
 > Provide a detailed summary of the benefits of renewable energy. Address the following aspects:
 > 1. Environmental benefits, such as reduced greenhouse gas emissions.
 > 2. Economic advantages, including job creation and cost savings.
