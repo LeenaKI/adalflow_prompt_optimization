@@ -1,6 +1,6 @@
 # AI Prompt Optimization App
 
-This repository contains a Streamlit-based web application designed to optimize AI prompts for better clarity, structure, and effectiveness. It leverages the **AdalFlow** library and **OpenAI API** to streamline the prompt optimization process.
+This repository contains a Streamlit-based web application designed to optimize AI prompts for better clarity, structure, and effectiveness. It leverages the **AdalFlow** library and **Gemini API** to streamline the prompt optimization process.
 
 ---
 
@@ -8,7 +8,7 @@ This repository contains a Streamlit-based web application designed to optimize 
 
 - Interactive user interface for prompt optimization.
 - Leverages AdalFlow to apply advanced optimization techniques.
-- Supports customizable OpenAI models (e.g., gpt-4o-mini used here).
+- Supports customizable Gemini models (e.g., `gemini-1.5-flash` used here).
 - Secure API key management.
 - Detailed and structured outputs tailored to the user's input.
 
@@ -29,11 +29,11 @@ This repository contains a Streamlit-based web application designed to optimize 
    ```
 
 3. **Set Up API Key**
-   You can provide your OpenAI API key in one of two ways:
+   You can provide your Gemini API key in one of two ways:
    - **Via Streamlit Input**: Enter the key directly in the app when prompted.
    - **Environment Variable**: Set an environment variable for better security:
      ```bash
-     export OPENAI_API_KEY="your-api-key-here"
+     export GEMINI_API_KEY="your-api-key-here"
      ```
 
 ---
@@ -47,7 +47,7 @@ This repository contains a Streamlit-based web application designed to optimize 
 
 2. Open the app in your browser at [http://localhost:8501](http://localhost:8501).
 
-3. Enter your OpenAI API key if prompted.
+3. Enter your Gemini API key if prompted.
 
 4. Input your custom prompt in the text area and click **Optimize Prompt** to receive an optimized version.
 
@@ -80,5 +80,5 @@ To ensure your API key remains private:
 - **Python**: Programming language.
 - **Streamlit**: Framework for creating the web interface.
 - **AdalFlow**: For prompt optimization pipelines.
-- **OpenAI API**: Backend for natural language processing.
+- **Gemini API**: Backend for natural language processing.
 
